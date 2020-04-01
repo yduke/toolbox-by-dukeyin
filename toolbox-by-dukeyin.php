@@ -1,10 +1,10 @@
 <?php
 /**
- * @package Spam Protection Some Chinese Please
+ * @package Toolbox by DukeYin
  * @version 1.0.0
  */
 /*
-Plugin Name: Spam Protection Some Chinese Please
+Plugin Name: Toolbox by DukeYin
 Plugin URI: http://www.dukeyin.com/about/
 Description: This will need visitors to type Chinese to submit comments, against spamers.
 Author: DukeYin
