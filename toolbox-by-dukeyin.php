@@ -26,7 +26,7 @@ define('TOOLBOX_BY_DUKEYIN_PATH', plugin_dir_url(__FILE__));
 require_once plugin_dir_path( __FILE__ ) . 'includes/options/class.settings-api.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/options/oop-example.php';
 
-new WeDevs_Settings_API_Test();
+new tbx__Settings();
 
 //Spam portaction
 function refused_spam_comments( $comment_data ) {  
