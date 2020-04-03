@@ -24,15 +24,19 @@ define('TOOLBOX_BY_DUKEYIN_VERSION', '1.0.0');
 define('TOOLBOX_BY_DUKEYIN_PATH', plugin_dir_url(__FILE__));
 
 require_once plugin_dir_path( __FILE__ ) . 'includes/options/class.settings-api.php';
-require_once plugin_dir_path( __FILE__ ) . 'includes/options/oop-example.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/options/calss-toobox-options.php';
+
+
 
 new tbx__Settings();
+
+
 
 //Spam portaction
 function refused_spam_comments( $comment_data ) {  
 $pattern = '/[一-龥]/u';  
 if(!preg_match($pattern,$comment_data['comment_content'])) {  
-wp_die( __('Need chinese charactors to submit your comment.','chinese-comment-only') );  
+wp_die( __('Need chinese charactors to submit your comment.','toolbox-by-dukeyin') );  
 }  
 return( $comment_data );  
 }  
