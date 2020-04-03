@@ -26,7 +26,7 @@ define('TOOLBOX_BY_DUKEYIN_PATH', plugin_dir_url(__FILE__));
 require_once plugin_dir_path( __FILE__ ) . 'includes/options/class.settings-api.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/options/calss-toobox-options.php';
 
-
+require plugin_dir_path( __FILE__ ) . 'includes/class-functions.php';
 
 new tbx__Settings();
 

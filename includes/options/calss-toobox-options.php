@@ -195,7 +195,6 @@ class tbx__Settings {
         $this->settings_api->show_forms();
 
         echo '</div>';
-		echo get_option( 'tbx_general')[tbx_all_settings];
     }
 
     /**
