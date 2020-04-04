@@ -5,7 +5,8 @@
  *
  * @author Tareq Hasan
  */
-if ( !class_exists('tbx__Settings' ) ):
+
+if ( !class_exists( 'tbx__Settings' ) ):
 class tbx__Settings {
 
     private $settings_api;
@@ -36,15 +37,23 @@ class tbx__Settings {
         $sections = array(
 			array(
                 'id'    => 'tbx_general',
-                'title' => __( 'General Settings', 'toolbox-by-dukeyin' )
+                'title' => __( 'General', 'toolbox-by-dukeyin' )
+            ),
+			array(
+                'id'    => 'tbx_comments',
+                'title' => __( 'Comments', 'toolbox-by-dukeyin' )
             ),
             array(
-                'id'    => 'tbx_basics',
-                'title' => __( 'Basic Settings', 'toolbox-by-dukeyin' )
+                'id'    => 'tbx_optimize',
+                'title' => __( 'Optimization', 'toolbox-by-dukeyin' )
             ),
             array(
-                'id'    => 'tbx_advanced',
-                'title' => __( 'Advanced Settings', 'toolbox-by-dukeyin' )
+                'id'    => 'tbx_security',
+                'title' => __( 'Security', 'toolbox-by-dukeyin' )
+            ),
+			array(
+                'id'    => 'tbx_customize',
+                'title' => __( 'Customization', 'toolbox-by-dukeyin' )
             )
         );
         return $sections;
@@ -65,124 +74,94 @@ class tbx__Settings {
                     'desc'  => __( 'Enable Hidden Administration Feature displaying All Site Settings.', 'toolbox-by-dukeyin' ),
                     'type'  => 'checkbox'
                 ),
-            ),
-		/** Basic */
-            'tbx_basics' => array(
-                array(
-                    'name'              => 'text_val',
-                    'label'             => __( 'Text Input', 'toolbox-by-dukeyin' ),
-                    'desc'              => __( 'Text input description', 'toolbox-by-dukeyin' ),
-                    'placeholder'       => __( 'Text Input placeholder', 'toolbox-by-dukeyin' ),
-                    'type'              => 'text',
-                    'default'           => 'Title',
-                    'sanitize_callback' => 'sanitize_text_field'
-                ),
-                array(
-                    'name'              => 'number_input',
-                    'label'             => __( 'Number Input', 'toolbox-by-dukeyin' ),
-                    'desc'              => __( 'Number field with validation callback `floatval`', 'toolbox-by-dukeyin' ),
-                    'placeholder'       => __( '1.99', 'toolbox-by-dukeyin' ),
-                    'min'               => 0,
-                    'max'               => 100,
-                    'step'              => '0.01',
-                    'type'              => 'number',
-                    'default'           => 'Title',
-                    'sanitize_callback' => 'floatval'
-                ),
-                array(
-                    'name'        => 'textarea',
-                    'label'       => __( 'Textarea Input', 'toolbox-by-dukeyin' ),
-                    'desc'        => __( 'Textarea description', 'toolbox-by-dukeyin' ),
-                    'placeholder' => __( 'Textarea placeholder', 'toolbox-by-dukeyin' ),
-                    'type'        => 'textarea'
-                ),
-                array(
-                    'name'        => 'html',
-                    'desc'        => __( 'HTML area description. You can use any <strong>bold</strong> or other HTML elements.', 'toolbox-by-dukeyin' ),
-                    'type'        => 'html'
-                ),
-                array(
-                    'name'  => 'checkbox',
-                    'label' => __( 'Checkbox', 'toolbox-by-dukeyin' ),
-                    'desc'  => __( 'Checkbox Label', 'toolbox-by-dukeyin' ),
+				
+				array(
+                    'name'  => 'tbx_gzip',
+                    'label' => __( 'Force Gzip', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Force webiste transfer in gzip mode.', 'toolbox-by-dukeyin' ),
                     'type'  => 'checkbox'
                 ),
-                array(
-                    'name'    => 'radio',
-                    'label'   => __( 'Radio Button', 'toolbox-by-dukeyin' ),
-                    'desc'    => __( 'A radio button', 'toolbox-by-dukeyin' ),
-                    'type'    => 'radio',
-                    'options' => array(
-                        'yes' => 'Yes',
-                        'no'  => 'No'
-                    )
+				
+				array(
+                    'name'  => 'tbx_autolink',
+                    'label' => __( 'Auto Link', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Make web addresses, emails a clickble like in content.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
                 ),
-                array(
-                    'name'    => 'selectbox',
-                    'label'   => __( 'A Dropdown', 'toolbox-by-dukeyin' ),
-                    'desc'    => __( 'Dropdown description', 'toolbox-by-dukeyin' ),
-                    'type'    => 'select',
-                    'default' => 'no',
-                    'options' => array(
-                        'yes' => 'Yes',
-                        'no'  => 'No'
-                    )
-                ),
-                array(
-                    'name'    => 'password',
-                    'label'   => __( 'Password', 'toolbox-by-dukeyin' ),
-                    'desc'    => __( 'Password description', 'toolbox-by-dukeyin' ),
-                    'type'    => 'password',
-                    'default' => ''
-                ),
-                array(
-                    'name'    => 'file',
-                    'label'   => __( 'File', 'toolbox-by-dukeyin' ),
-                    'desc'    => __( 'File description', 'toolbox-by-dukeyin' ),
-                    'type'    => 'file',
-                    'default' => '',
-                    'options' => array(
-                        'button_label' => 'Choose Image'
-                    )
-                )
             ),
-	/** Advanced */
-            'tbx_advanced' => array(
+			
+			
+		/** tbx_comments */
+	'tbx_comments' => array(
                 array(
-                    'name'    => 'color',
-                    'label'   => __( 'Color', 'toolbox-by-dukeyin' ),
-                    'desc'    => __( 'Color description', 'toolbox-by-dukeyin' ),
-                    'type'    => 'color',
-                    'default' => ''
+                    'name'  => 'tbx_unlink_cmt',
+                    'label' => __( 'Link in Comments unclickable', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Check this to make links in comments unclickable.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
                 ),
-                array(
-                    'name'    => 'password',
-                    'label'   => __( 'Password', 'toolbox-by-dukeyin' ),
-                    'desc'    => __( 'Password description', 'toolbox-by-dukeyin' ),
-                    'type'    => 'password',
-                    'default' => ''
+				
+				array(
+                    'name'  => 'tbx_disable_cmt',
+                    'label' => __( 'Disable URL field', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Disable URL field in Comment from.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
                 ),
-                array(
-                    'name'    => 'wysiwyg',
-                    'label'   => __( 'Advanced Editor', 'toolbox-by-dukeyin' ),
-                    'desc'    => __( 'WP_Editor description', 'toolbox-by-dukeyin' ),
-                    'type'    => 'wysiwyg',
-                    'default' => ''
+				
+				array(
+                    'name'  => 'tbx_cmter_new_window',
+                    'label' => __( 'Coment link in new window', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Display website on new window when readers click Commenter\'s name', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
                 ),
-                array(
-                    'name'    => 'multicheck',
-                    'label'   => __( 'Multile checkbox', 'toolbox-by-dukeyin' ),
-                    'desc'    => __( 'Multi checkbox description', 'toolbox-by-dukeyin' ),
-                    'type'    => 'multicheck',
-                    'default' => array('one' => 'one', 'four' => 'four'),
-                    'options' => array(
-                        'one'   => 'One',
-                        'two'   => 'Two',
-                        'three' => 'Three',
-                        'four'  => 'Four'
-                    )
+				array(
+                    'name'  => 'tbx_some_chinese',
+                    'label' => __( 'Some Chinese Please', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Comments must have some chinese.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
                 ),
-            )
+				array(
+                    'name'  => 'tbx_add_at',
+                    'label' => __( 'Auto add @ in Reply', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Auto add a @author to reply.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
+            ),
+			
+		
+/** tbx_optimize */
+            'tbx_optimize' => array(
+				array(
+                    'name'  => 'tbx_emoji_cdn',
+                    'label' => __( 'Emoji CDN', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Use free CDN to load emoji svg and png.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
+				array(
+                    'name'    => 'tbx_gravatar_cdn',
+                    'label'   => __( 'Gravatar CDN', 'toolbox-by-dukeyin' ),
+                    'desc'    => __( 'Replace current gravatar with Qiniu CDN', 'toolbox-by-dukeyin' ),
+                    'type'    => 'checkbox',
+                ),
+
+            ),
+/** tbx_security */
+            'tbx_security' => array(
+				array(
+                    'name'  => 'tbx_only_my_media',
+                    'label' => __( 'show current user uploads only', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'show current user uploads only.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
+            ),
+/** tbx_customize */
+            'tbx_customize' => array(
+				array(
+                    'name'  => 'tbx_remove_image_wh',
+                    'label' => __( 'Remove image Width and Height', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Remove Width and Height of all images for responsive', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
+            ),
         );
 
         return $settings_fields;
