@@ -1,0 +1,466 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Project-Id-Version: Toolbox by DukeYin\n"
+"POT-Creation-Date: 2020-04-04 20:32+0800\n"
+"PO-Revision-Date: 2020-04-04 21:01+0800\n"
+"Language-Team: Duke Yin <duke@dukeyin.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: toolbox-by-dukeyin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Duke Yin <duke@dukeyin.com>\n"
+"Language: zh_CN\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/class-functions.php:7
+msgid "All Settings"
+msgstr "所有设置"
+
+#: includes/class-functions.php:119
+msgid "Need chinese charactors to submit your comment."
+msgstr "评论中需要包含中文字符以提交您的评论。"
+
+#: includes/class-functions.php:162
+msgid "Thumbnail"
+msgstr "缩略图"
+
+#: includes/class-functions.php:183
+msgid "None"
+msgstr "无"
+
+#: includes/class-functions.php:230
+msgid "No feed available,please visit our <a href=\""
+msgstr "RSS已经关闭，请访问<a href=\""
+
+#: includes/class-functions.php:258
+msgid "Y/m/d"
+msgstr "Y年m月d日"
+
+#: includes/class-functions.php:260
+msgid "Re-Attach"
+msgstr "重新附加"
+
+#: includes/class-functions.php:264
+msgid "(Unattached)"
+msgstr "（未附加）"
+
+#: includes/class-functions.php:265
+msgid "Attach"
+msgstr "附加"
+
+#: includes/options/calss-toobox-options.php:32
+#: includes/options/oop-example.php:31
+msgid "Toolbox"
+msgstr "工具箱"
+
+#: includes/options/calss-toobox-options.php:40
+msgid "General"
+msgstr "通用"
+
+#: includes/options/calss-toobox-options.php:44
+msgid "Comments"
+msgstr "评论"
+
+#: includes/options/calss-toobox-options.php:48
+msgid "Optimization"
+msgstr "优化"
+
+#: includes/options/calss-toobox-options.php:52
+msgid "Security"
+msgstr "安全"
+
+#: includes/options/calss-toobox-options.php:56
+msgid "Customization"
+msgstr "自定义"
+
+#: includes/options/calss-toobox-options.php:73
+msgid "Show All Settings"
+msgstr "显示所有设置"
+
+#: includes/options/calss-toobox-options.php:74
+msgid "Enable Hidden Administration Feature displaying All Site Settings."
+msgstr "开启隐藏的管理选项，显示所有设置。"
+
+#: includes/options/calss-toobox-options.php:80
+msgid "Force Gzip"
+msgstr "强制Gizp"
+
+#: includes/options/calss-toobox-options.php:81
+msgid "Force webiste transfer in gzip mode."
+msgstr "强制网站使用Gzip压缩传输模式。"
+
+#: includes/options/calss-toobox-options.php:87
+msgid "Auto Link"
+msgstr "自动链接"
+
+#: includes/options/calss-toobox-options.php:88
+msgid "Make web addresses, emails a clickble like in content."
+msgstr "使内容中的网址、电子邮件地址变成可点击的链接。"
+
+#: includes/options/calss-toobox-options.php:93
+msgid "Add Thumbnails to list"
+msgstr "在列表中添加缩略图"
+
+#: includes/options/calss-toobox-options.php:94
+msgid "Add Thumbnails in Manage Posts/Pages List."
+msgstr "在文章或页面的列表中添加缩略图。"
+
+#: includes/options/calss-toobox-options.php:104
+msgid "Link in Comments unclickable"
+msgstr "评论链接不可点击"
+
+#: includes/options/calss-toobox-options.php:105
+msgid "Check this to make links in comments unclickable."
+msgstr "使在评论中的链接不可点击。"
+
+#: includes/options/calss-toobox-options.php:111
+msgid "Disable URL field"
+msgstr "关闭评论表单网址"
+
+#: includes/options/calss-toobox-options.php:112
+msgid "Disable URL field in Comment from."
+msgstr "在评论表单中不显示网址。"
+
+#: includes/options/calss-toobox-options.php:118
+msgid "Coment link in new window"
+msgstr "在新窗口中打开评论人的链接"
+
+#: includes/options/calss-toobox-options.php:119
+msgid "Display website on new window when readers click Commenter's name"
+msgstr "评论头像的链接将会在新窗口中打开。"
+
+#: includes/options/calss-toobox-options.php:124
+msgid "Some Chinese Please"
+msgstr "中文才能评论"
+
+#: includes/options/calss-toobox-options.php:125
+msgid "Comments must have some chinese."
+msgstr "访客填写的评论内容中必须包含至少一个中文字符才可以提交。"
+
+#: includes/options/calss-toobox-options.php:130
+msgid "Auto add @ in Reply"
+msgstr "回复自动添加@作者"
+
+#: includes/options/calss-toobox-options.php:131
+msgid "Auto add a @author to reply."
+msgstr "在回复内容前自动添加@作者名。"
+
+#: includes/options/calss-toobox-options.php:141
+msgid "Emoji CDN"
+msgstr "Emoji CDN"
+
+#: includes/options/calss-toobox-options.php:142
+msgid "Use free CDN to load emoji svg and png."
+msgstr "使用免费的CDN加速emoji表情svg和png文件。"
+
+#: includes/options/calss-toobox-options.php:147
+msgid "Gravatar CDN"
+msgstr "Gravatar头像CDN："
+
+#: includes/options/calss-toobox-options.php:148
+msgid "Replace current gravatar with Qiniu CDN"
+msgstr "将当前Gravatar头像替换为七牛CDN加速。"
+
+#: includes/options/calss-toobox-options.php:153
+msgid "Max revisons"
+msgstr "修订版数量"
+
+#: includes/options/calss-toobox-options.php:154
+msgid ""
+"Revisons for your posts and pages, will not change wordpress revison numbers "
+"if set to 0."
+msgstr "设置文章或页面修订版的数量，如果设置为0则不修改Wordpress默认。"
+
+#: includes/options/calss-toobox-options.php:155
+msgid "Recommand 5"
+msgstr "建议 5"
+
+#: includes/options/calss-toobox-options.php:165
+msgid "No self ping"
+msgstr "取消自Ping"
+
+#: includes/options/calss-toobox-options.php:166
+msgid "Remove ping to your own website."
+msgstr "在本网站不自己ping自己。"
+
+#: includes/options/calss-toobox-options.php:171
+msgid "Re-attach media"
+msgstr "重新附加媒体"
+
+#: includes/options/calss-toobox-options.php:172
+msgid ""
+"This will adds a new column to the Media Library Page allowing you to re-"
+"attach images."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:180
+msgid "show current user uploads only"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:181
+msgid "show current user uploads only."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:189
+msgid "Remove image Width and Height"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:190
+msgid "Remove Width and Height of all images for responsive"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:195
+msgid "Length of excerpt"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:196
+msgid "Set the maximum number of words in the excerpt."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:197
+msgid "Recommand 200"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:207
+msgid "Addmin footer text"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:208
+msgid "Custom addmin footer text."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:209
+msgid "Thank you for creating with WordPress"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:216
+msgid "Widget shortcode"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:217
+msgid "Enable shortcodes in widgets."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:222
+msgid "Diasble RSS"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:223
+msgid "Disable RSS in whole site."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:228
+msgid "Custom Admin logo"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:229
+msgid "Choose a image to set your Admin logo."
+msgstr ""
+
+#: includes/options/class.settings-api.php:370
+msgid "Choose File"
+msgstr ""
+
+#: includes/options/oop-example.php:39
+#: includes/options/procedural-example.php:20
+msgid "Basic Settings"
+msgstr ""
+
+#: includes/options/oop-example.php:43
+#: includes/options/procedural-example.php:24
+msgid "Advanced Settings"
+msgstr ""
+
+#: includes/options/oop-example.php:59
+#: includes/options/procedural-example.php:36
+#: includes/options/procedural-example.php:111
+#: includes/options/procedural-example.php:187
+msgid "Text Input"
+msgstr ""
+
+#: includes/options/oop-example.php:60
+#: includes/options/procedural-example.php:37
+#: includes/options/procedural-example.php:112
+#: includes/options/procedural-example.php:188
+msgid "Text input description"
+msgstr ""
+
+#: includes/options/oop-example.php:61
+msgid "Text Input placeholder"
+msgstr ""
+
+#: includes/options/oop-example.php:68
+msgid "Number Input"
+msgstr ""
+
+#: includes/options/oop-example.php:69
+msgid "Number field with validation callback `floatval`"
+msgstr ""
+
+#: includes/options/oop-example.php:70
+msgid "1.99"
+msgstr ""
+
+#: includes/options/oop-example.php:80
+#: includes/options/procedural-example.php:43
+#: includes/options/procedural-example.php:118
+#: includes/options/procedural-example.php:194
+msgid "Textarea Input"
+msgstr ""
+
+#: includes/options/oop-example.php:81
+#: includes/options/procedural-example.php:44
+#: includes/options/procedural-example.php:119
+#: includes/options/procedural-example.php:195
+msgid "Textarea description"
+msgstr ""
+
+#: includes/options/oop-example.php:82
+msgid "Textarea placeholder"
+msgstr ""
+
+#: includes/options/oop-example.php:87
+msgid ""
+"HTML area description. You can use any <strong>bold</strong> or other HTML "
+"elements."
+msgstr ""
+
+#: includes/options/oop-example.php:92
+#: includes/options/procedural-example.php:49
+#: includes/options/procedural-example.php:124
+#: includes/options/procedural-example.php:200
+msgid "Checkbox"
+msgstr ""
+
+#: includes/options/oop-example.php:93
+#: includes/options/procedural-example.php:50
+#: includes/options/procedural-example.php:125
+#: includes/options/procedural-example.php:201
+msgid "Checkbox Label"
+msgstr ""
+
+#: includes/options/oop-example.php:98
+#: includes/options/procedural-example.php:55
+#: includes/options/procedural-example.php:130
+#: includes/options/procedural-example.php:206
+msgid "Radio Button"
+msgstr ""
+
+#: includes/options/oop-example.php:99
+#: includes/options/procedural-example.php:56
+#: includes/options/procedural-example.php:131
+#: includes/options/procedural-example.php:207
+msgid "A radio button"
+msgstr ""
+
+#: includes/options/oop-example.php:108
+#: includes/options/procedural-example.php:77
+#: includes/options/procedural-example.php:154
+#: includes/options/procedural-example.php:228
+msgid "A Dropdown"
+msgstr ""
+
+#: includes/options/oop-example.php:109
+#: includes/options/procedural-example.php:78
+#: includes/options/procedural-example.php:155
+#: includes/options/procedural-example.php:229
+msgid "Dropdown description"
+msgstr ""
+
+#: includes/options/oop-example.php:119 includes/options/oop-example.php:145
+#: includes/options/procedural-example.php:88
+#: includes/options/procedural-example.php:164
+#: includes/options/procedural-example.php:238
+msgid "Password"
+msgstr "密码"
+
+#: includes/options/oop-example.php:120 includes/options/oop-example.php:146
+#: includes/options/procedural-example.php:89
+#: includes/options/procedural-example.php:165
+#: includes/options/procedural-example.php:239
+msgid "Password description"
+msgstr ""
+
+#: includes/options/oop-example.php:126
+#: includes/options/procedural-example.php:95
+#: includes/options/procedural-example.php:171
+#: includes/options/procedural-example.php:245
+msgid "File"
+msgstr "文件"
+
+#: includes/options/oop-example.php:127
+#: includes/options/procedural-example.php:96
+#: includes/options/procedural-example.php:172
+#: includes/options/procedural-example.php:246
+msgid "File description"
+msgstr ""
+
+#: includes/options/oop-example.php:138
+#: includes/options/procedural-example.php:102
+#: includes/options/procedural-example.php:178
+#: includes/options/procedural-example.php:252
+msgid "Color"
+msgstr "颜色"
+
+#: includes/options/oop-example.php:139
+#: includes/options/procedural-example.php:103
+#: includes/options/procedural-example.php:179
+#: includes/options/procedural-example.php:253
+msgid "Color description"
+msgstr ""
+
+#: includes/options/oop-example.php:152
+msgid "Advanced Editor"
+msgstr ""
+
+#: includes/options/oop-example.php:153
+msgid "WP_Editor description"
+msgstr ""
+
+#: includes/options/oop-example.php:159
+#: includes/options/procedural-example.php:65
+#: includes/options/procedural-example.php:141
+#: includes/options/procedural-example.php:216
+msgid "Multile checkbox"
+msgstr ""
+
+#: includes/options/oop-example.php:160
+#: includes/options/procedural-example.php:66
+#: includes/options/procedural-example.php:142
+#: includes/options/procedural-example.php:217
+msgid "Multi checkbox description"
+msgstr ""
+
+#: includes/options/procedural-example.php:28
+msgid "Other Settings"
+msgstr "其他设置"
+
+#. Plugin Name of the plugin/theme
+msgid "Toolbox by DukeYin"
+msgstr "DukeYin工具箱"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.dukeyin.com/about/"
+msgstr "http://www.dukeyin.com/about/"
+
+#. Description of the plugin/theme
+msgid ""
+"This will need visitors to type Chinese to submit comments, against spamers."
+msgstr "打开此选项将要求访客评论中至少包含一个中文字符，有效防止垃圾评论。"
+
+#. Author of the plugin/theme
+msgid "DukeYin"
+msgstr "DukeYin"
+
+#. Author URI of the plugin/theme
+msgid "https://www.dukeyin.com"
+msgstr "https://www.dukeyin.com"
