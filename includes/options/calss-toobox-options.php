@@ -88,6 +88,12 @@ class tbx__Settings {
                     'desc'  => __( 'Make web addresses, emails a clickble like in content.', 'toolbox-by-dukeyin' ),
                     'type'  => 'checkbox'
                 ),
+				array(
+                    'name'  => 'tbx_thum_list',
+                    'label' => __( 'Add Thumbnails to list', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Add Thumbnails in Manage Posts/Pages List.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
             ),
 			
 			
@@ -142,7 +148,30 @@ class tbx__Settings {
                     'desc'    => __( 'Replace current gravatar with Qiniu CDN', 'toolbox-by-dukeyin' ),
                     'type'    => 'checkbox',
                 ),
-
+                array(
+                    'name'              => 'tbx_revisons',
+                    'label'             => __( 'Max revisons', 'toolbox-by-dukeyin' ),
+                    'desc'              => __( 'Revisons for your posts and pages, will not change wordpress revison numbers if set to 0.', 'toolbox-by-dukeyin' ),
+                    'placeholder'       => __( 'Recommand 5', 'toolbox-by-dukeyin' ),
+                    'min'               => 0,
+                    'max'               => 20,
+                    'step'              => '0',
+                    'type'              => 'number',
+                    'default'           => 5,
+                    'sanitize_callback' => 'integer'
+                ),
+				array(
+                    'name'    => 'tbx_no_self_ping',
+                    'label'   => __( 'No self ping', 'toolbox-by-dukeyin' ),
+                    'desc'    => __( 'Remove ping to your own website.', 'toolbox-by-dukeyin' ),
+                    'type'    => 'checkbox',
+                ),
+				array(
+                    'name'    => 'tbx_reattach_media',
+                    'label'   => __( 'Re-attach media', 'toolbox-by-dukeyin' ),
+                    'desc'    => __( 'This will adds a new column to the Media Library Page allowing you to re-attach images.', 'toolbox-by-dukeyin' ),
+                    'type'    => 'checkbox',
+                ),
             ),
 /** tbx_security */
             'tbx_security' => array(
@@ -160,6 +189,49 @@ class tbx__Settings {
                     'label' => __( 'Remove image Width and Height', 'toolbox-by-dukeyin' ),
                     'desc'  => __( 'Remove Width and Height of all images for responsive', 'toolbox-by-dukeyin' ),
                     'type'  => 'checkbox'
+                ),
+                array(
+                    'name'              => 'tbx_excerpt_length',
+                    'label'             => __( 'Length of excerpt', 'toolbox-by-dukeyin' ),
+                    'desc'              => __( 'Set the maximum number of words in the excerpt.', 'toolbox-by-dukeyin' ),
+                    'placeholder'       => __( 'Recommand 200', 'toolbox-by-dukeyin' ),
+                    'min'               => 0,
+                    'max'               => 1000,
+                    'step'              => '0',
+                    'type'              => 'number',
+                    'default'           => 500,
+                    'sanitize_callback' => 'integer'
+                ),
+                array(
+                    'name'              => 'tbx_admin_footer',
+                    'label'             => __( 'Addmin footer text', 'toolbox-by-dukeyin' ),
+                    'desc'              => __( 'Custom addmin footer text.', 'toolbox-by-dukeyin' ),
+                    'placeholder'       => __( 'Thank you for creating with WordPress', 'toolbox-by-dukeyin' ),
+                    'type'              => 'text',
+                    'default'           => '',
+                    'sanitize_callback' => 'sanitize_text_field'
+                ),
+				array(
+                    'name'  => 'tbx_widget_shortcode',
+                    'label' => __( 'Widget shortcode', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Enable shortcodes in widgets.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
+				array(
+                    'name'  => 'tbx_disable_rss',
+                    'label' => __( 'Diasble RSS', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Disable RSS in whole site.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
+                array(
+                    'name'    => 'tbx_custom_login_logo',
+                    'label'   => __( 'Custom Admin logo', 'toolbox-by-dukeyin' ),
+                    'desc'    => __( 'Choose a image to set your Admin logo.', 'toolbox-by-dukeyin' ),
+                    'type'    => 'file',
+                    'default' => '',
+                    'options' => array(
+                        'button_label' => 'Choose Image'
+                    )
                 ),
             ),
         );
