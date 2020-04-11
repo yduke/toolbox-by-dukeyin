@@ -31,11 +31,12 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-functions.php';
 new tbx__Settings();
 
 
-//setting link
+/*
+ * setting link
+*/
 add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'tbx_plugin_action_links');
- 
 function tbx_plugin_action_links($links)
 {
-        $links[] = '<a href="' . get_admin_url(null, 'options-general.php?page=toolbox-by-dukeyin') . '">' . __('Settings','toolbox-by-dukeyin') . '</a>';
-        return $links;
+$links[] = '<a href="' . get_admin_url(null, 'options-general.php?page=toolbox-by-dukeyin') . '">' . __('Settings','toolbox-by-dukeyin') . '</a>';
+return $links;
 }

@@ -172,6 +172,12 @@ class tbx__Settings {
                     'desc'    => __( 'This will adds a new column to the Media Library Page allowing you to re-attach images.', 'toolbox-by-dukeyin' ),
                     'type'    => 'checkbox',
                 ),
+				array(
+                    'name'    => 'tbx_disable_image_resize',
+                    'label'   => __( 'Disable image resize', 'toolbox-by-dukeyin' ),
+                    'desc'    => __( 'This will disable default image auto resize. By defalut WordPress will create 3 thumbnail for each uploaded image.', 'toolbox-by-dukeyin' ),
+                    'type'    => 'checkbox',
+                ),
             ),
 /** tbx_security */
             'tbx_security' => array(
@@ -179,6 +185,24 @@ class tbx__Settings {
                     'name'  => 'tbx_only_my_media',
                     'label' => __( 'show current user uploads only', 'toolbox-by-dukeyin' ),
                     'desc'  => __( 'show current user uploads only.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
+				array(
+                    'name'  => 'tbx_no_iframe',
+                    'label' => __( 'Break out of iframe', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Prevent this website from being put into iframe.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
+				array(
+                    'name'  => 'tbx_remove_wp_versions',
+                    'label' => __( 'Remove WordPress Versions', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Will remove WordPress version numbers on head and feed when this is checked.', 'toolbox-by-dukeyin' ),
+                    'type'  => 'checkbox'
+                ),
+				array(
+                    'name'  => 'tbx_stop_admin_login',
+                    'label' => __( 'Stop admin login try', 'toolbox-by-dukeyin' ),
+                    'desc'  => __( 'Someone trying to login to Wordpress with username as admin will be stopped.', 'toolbox-by-dukeyin' ),
                     'type'  => 'checkbox'
                 ),
             ),

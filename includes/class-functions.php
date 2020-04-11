@@ -226,14 +226,14 @@ if($tbx_widget_shortcode == 'on'){
 //Disable RSS
 $tbx_disable_rss = get_option('tbx_customize')['tbx_disable_rss'] ?? '';
 if($tbx_disable_rss == 'on'){
-	function fb_disable_feed() {
+	function tbx_disable_feed() {
 	wp_die( __('No feed available,please visit our <a href="'. get_bloginfo('url') .'">homepage</a>!', 'toolbox-by-dukeyin') );
 	}
-	add_action('do_feed', 'fb_disable_feed', 1);
-	add_action('do_feed_rdf', 'fb_disable_feed', 1);
-	add_action('do_feed_rss', 'fb_disable_feed', 1);
-	add_action('do_feed_rss2', 'fb_disable_feed', 1);
-	add_action('do_feed_atom', 'fb_disable_feed', 1);
+	add_action('do_feed', 'tbx_disable_feed', 1);
+	add_action('do_feed_rdf', 'tbx_disable_feed', 1);
+	add_action('do_feed_rss', 'tbx_disable_feed', 1);
+	add_action('do_feed_rss2', 'tbx_disable_feed', 1);
+	add_action('do_feed_atom', 'tbx_disable_feed', 1);
 }
 
 //re-attach midea option
@@ -282,4 +282,50 @@ if($tbx_custom_login_logo != ''){
 		';
 	}
 	add_action('login_head', 'custom_login_logo');
+}
+
+//no_iframe
+$tbx_no_iframe = get_option('tbx_security')['tbx_no_iframe'] ?? '';
+if($tbx_no_iframe == 'on'){
+function break_out_of_frames() {
+	if (!is_preview()) {
+		echo "\n<script type=\"text/javascript\">";
+		echo "\n<!--";
+		echo "\nif (parent.frames.length > 0) { parent.location.href = location.href; }";
+		echo "\n-->";
+		echo "\n</script>\n\n";
+	}
+}
+add_action('wp_head', 'break_out_of_frames');
+}
+
+//remove_wp_versions
+$tbx_remove_wp_versions = get_option('tbx_security')['tbx_remove_wp_versions'] ?? '';
+if($tbx_remove_wp_versions == 'on'){
+add_filter('the_generator', 'tbx_remove_wp_versions');
+function tbx_remove_wp_versions() { return '';}
+}
+
+//no_admin_login
+$tbx_stop_admin_login = get_option('tbx_security')['tbx_stop_admin_login'] ?? '';
+if($tbx_stop_admin_login == 'on'){
+	add_filter( 'wp_authenticate', 'tbx_no_admin_user' );
+	function tbx_no_admin_user($user){
+		if($user == 'admin'){
+			exit;
+		}
+	}
+	add_filter('sanitize_user', 'tbx_sanitize_user_no_admin',10,3);
+	function tbx_sanitize_user_no_admin($username, $raw_username, $strict){
+		if($raw_username == 'admin' || $username == 'admin'){
+			exit;
+		}
+		return $username;
+	}
+}
+
+//disable_image_resize
+$tbx_disable_image_resize = get_option('tbx_optimize')['tbx_disable_image_resize'] ?? '';
+if($tbx_disable_image_resize == 'on'){
+add_filter('add_image_size', create_function('', 'return 1;'));
 }
