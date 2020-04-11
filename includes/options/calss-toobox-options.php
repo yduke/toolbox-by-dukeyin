@@ -30,7 +30,7 @@ class tbx__Settings {
 
     function admin_menu() {
 		$tbx_title = __( 'Toolbox', 'toolbox-by-dukeyin' );
-        add_options_page( $tbx_title, $tbx_title, 'delete_posts', 'settings_api_test', array($this, 'plugin_page') );
+        add_options_page( $tbx_title, $tbx_title, 'delete_posts', 'toolbox-by-dukeyin', array($this, 'plugin_page') );
     }
 
     function get_settings_sections() {
