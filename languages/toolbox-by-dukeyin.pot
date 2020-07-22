@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Toolbox by DukeYin\n"
-"POT-Creation-Date: 2020-04-04 20:32+0800\n"
-"PO-Revision-Date: 2020-04-04 20:32+0800\n"
+"POT-Creation-Date: 2020-07-22 09:39+0800\n"
+"PO-Revision-Date: 2020-07-22 09:39+0800\n"
 "Last-Translator: Duke Yin <duke@dukeyin.com>\n"
 "Language-Team: Duke Yin <duke@dukeyin.com>\n"
 "MIME-Version: 1.0\n"
@@ -55,6 +55,10 @@ msgstr ""
 
 #: includes/class-functions.php:265
 msgid "Attach"
+msgstr ""
+
+#: includes/functions-diy.php:575
+msgid "<h1>抱歉，本站不支持订阅，请返回<a href=\""
 msgstr ""
 
 #: includes/options/calss-toobox-options.php:32
@@ -202,67 +206,103 @@ msgid ""
 "attach images."
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:180
+#: includes/options/calss-toobox-options.php:177
+msgid "Disable image resize"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:178
+msgid ""
+"This will disable default image auto resize. By defalut WordPress will "
+"create 3 thumbnail for each uploaded image."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:186
 msgid "show current user uploads only"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:181
+#: includes/options/calss-toobox-options.php:187
 msgid "show current user uploads only."
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:189
+#: includes/options/calss-toobox-options.php:192
+msgid "Break out of iframe"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:193
+msgid "Prevent this website from being put into iframe."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:198
+msgid "Remove WordPress Versions"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:199
+msgid ""
+"Will remove WordPress version numbers on head and feed when this is checked."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:204
+msgid "Stop admin login try"
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:205
+msgid ""
+"Someone trying to login to Wordpress with username as admin will be stopped."
+msgstr ""
+
+#: includes/options/calss-toobox-options.php:213
 msgid "Remove image Width and Height"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:190
+#: includes/options/calss-toobox-options.php:214
 msgid "Remove Width and Height of all images for responsive"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:195
+#: includes/options/calss-toobox-options.php:219
 msgid "Length of excerpt"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:196
+#: includes/options/calss-toobox-options.php:220
 msgid "Set the maximum number of words in the excerpt."
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:197
+#: includes/options/calss-toobox-options.php:221
 msgid "Recommand 200"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:207
+#: includes/options/calss-toobox-options.php:231
 msgid "Addmin footer text"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:208
+#: includes/options/calss-toobox-options.php:232
 msgid "Custom addmin footer text."
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:209
+#: includes/options/calss-toobox-options.php:233
 msgid "Thank you for creating with WordPress"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:216
+#: includes/options/calss-toobox-options.php:240
 msgid "Widget shortcode"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:217
+#: includes/options/calss-toobox-options.php:241
 msgid "Enable shortcodes in widgets."
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:222
+#: includes/options/calss-toobox-options.php:246
 msgid "Diasble RSS"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:223
+#: includes/options/calss-toobox-options.php:247
 msgid "Disable RSS in whole site."
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:228
+#: includes/options/calss-toobox-options.php:252
 msgid "Custom Admin logo"
 msgstr ""
 
-#: includes/options/calss-toobox-options.php:229
+#: includes/options/calss-toobox-options.php:253
 msgid "Choose a image to set your Admin logo."
 msgstr ""
 
@@ -442,6 +482,10 @@ msgstr ""
 
 #: includes/options/procedural-example.php:28
 msgid "Other Settings"
+msgstr ""
+
+#: toolbox-by-dukeyin.php:40
+msgid "Settings"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
